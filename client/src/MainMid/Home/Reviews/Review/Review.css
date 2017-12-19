@@ -1,0 +1,20 @@
+.user img{
+    height: 60px;
+    width: 60px;
+    border: 1px solid ;
+    border-radius:30px;
+}
+.user{
+    float :right;
+    margin-top: 0;
+    text-align: center;
+    margin-right: 7%;
+}
+.user h5{
+    margin-top: 0;
+    
+}
+.review{
+    
+    border-bottom: 1px solid grey;
+}

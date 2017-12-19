@@ -1,0 +1,53 @@
+.dateCheak{
+    float: right;
+    border: 1px solid #222222;
+    margin-left: auto;
+    margin-right: 5%;
+    margin-top:-61px; 
+    position: relative;
+    height: 17em; 
+   
+}
+.dateInput{
+    display: flex;
+    flex-direction:row;
+    
+}
+.pernigth{
+    font-size: 25px;
+    font-family:  sans-serif;
+    font-weight:1000;
+    padding-left: 1em;
+}
+.price{
+    font-family:  sans-serif;   
+    font-weight:800;
+    font-size: 3em;
+    height:60px;
+    width: 100%;
+    color:whitesmoke;
+    background-color: #222222;
+    opacity: 0.7;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+.dateInput input{
+    height: 35px;
+    margin: 15px;
+    /* padding-left: 15px; */
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    background: rgba(255,255,255);
+   }
+button{
+    margin-top: 35px;
+    height: 35px;
+    width: 100%;
+    
+}
+.select-input{
+ width: 90%;
+ margin: auto;
+}

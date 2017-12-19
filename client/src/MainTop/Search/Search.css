@@ -1,0 +1,16 @@
+.search {
+   height: 0
+}
+
+.search input{
+    padding:1.8%;
+    margin-left:5%;
+    width: 60%;
+    border: none;
+    /* margin-top:auto;  */
+    height: 100%;
+    margin-top: 0.8em;
+    
+
+    
+}
