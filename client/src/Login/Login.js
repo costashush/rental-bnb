@@ -61,14 +61,12 @@ class Login extends Component {
                 console.log(error);
             });
     }
-
     render() {
         const { redirect } = this.state;
 
         if (redirect) {
             return <Redirect to="/" />;
         }
-
         return (
             <div className='container'>
                 <MuiThemeProvider>

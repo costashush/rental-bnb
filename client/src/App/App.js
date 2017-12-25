@@ -11,12 +11,8 @@ import {
   Route,
   Link
 } from 'react-router-dom'
-
 import homeData from '../homeData.json.js';
 import './App.css';
-
-// console.log(homeData)
-
 
 class App extends Component {
   render() {
@@ -25,8 +21,6 @@ class App extends Component {
         <div className="App">
           <TopNav />
           <Search />
-
-
           <Route exact path="/" component={HomePage} />
           <Route path="/SignUp" component={SignUp} />
           <Route path="/Login" component={Login} />

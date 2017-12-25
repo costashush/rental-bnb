@@ -30,10 +30,7 @@ export default class ReviewForm extends Component {
         };
         console.log(head.headers.authorization)
         if (payload.name && head.headers['authorization']) {
-
-
             axios
-
                 .post(apiBaseUrl, payload, head)
                 .then(response => {
                     console.log(response)
