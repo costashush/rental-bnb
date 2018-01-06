@@ -8,19 +8,15 @@ class HomePage extends Component {
   constructor() {
     super()
     this.state = { homeData: null };
-
   }
-
   componentDidMount() {
     this.fetchData().then(homeData => this.setState({ homeData }))
   }
-
   async fetchData() {
     let data = await fetch('http://localhost:9000/api/locations', { method: 'GET' })
       .then(response => response.json())
       .then((json) => { return json })
     return data
-
   }
   render() {
     return (
@@ -28,12 +24,8 @@ class HomePage extends Component {
         {this.state.homeData && <div className="homePage">
           <Filter />
           <HomesGrid data={this.state.homeData} />
-          {/* <Location data={this.state.homeData}/> */}
         </div>}
-
       </div>
-
-
     );
   }
 }

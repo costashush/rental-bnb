@@ -11,12 +11,8 @@ import {
   Route,
   Link
 } from 'react-router-dom'
-
 import homeData from '../homeData.json.js';
 import './App.css';
-
-// console.log(homeData)
-
 
 class App extends Component {
   render() {

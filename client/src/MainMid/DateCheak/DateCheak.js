@@ -28,22 +28,13 @@ export default class DateCheak extends Component {
             { value: 'five', label: 'Five' }                
         ];
     }
-
-
     handleChangeStart = startDate => {
         this.setState({ startDate })
-        // console.log(this.state.startDate);
     }
 
     handleChangeEnd = endDate => {
         this.setState({ endDate })
-        // console.log(this.state.endDate);
     }
-    // logChange(val) {
-    //     console.log("Selected: " + JSON.stringify(val));
-    //   }
-
-
     render() {
 
         return (

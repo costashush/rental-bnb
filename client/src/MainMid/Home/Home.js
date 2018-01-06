@@ -6,9 +6,6 @@ import ReviewForm from '../Home/Reviews/ReviewForm/ReviewForm.js';
 import ReviewList from '../Home/Reviews/ReviewList/ReviewList.js';
 import MainImage from '../../MainTop/MainImage/MainImage.js';
 import DateCheak from '../../MainMid/DateCheak/DateCheak.js';
-
-// import homeData from '../../homeData.json.js';
-
 import './Home.css';
 
 export default class Home extends Component {
@@ -33,12 +30,9 @@ export default class Home extends Component {
       }
     
     handleOnClick() {
-        // this.state.reviewData.push(data);
-        // this.setState({ reviewData: this.state.reviewData });
         this.setState();
         this.componentDidMount();
     }
-    
     render() {
         return (
             <div>
@@ -52,7 +46,6 @@ export default class Home extends Component {
                     <Location data={this.state.homeData.address[0]} />
                 </div>}
             </div>
-            
         )
     }
 }
