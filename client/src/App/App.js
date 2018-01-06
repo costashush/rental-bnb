@@ -25,8 +25,6 @@ class App extends Component {
         <div className="App">
           <TopNav />
           <Search />
-
-
           <Route exact path="/" component={HomePage} />
           <Route path="/SignUp" component={SignUp} />
           <Route path="/Login" component={Login} />

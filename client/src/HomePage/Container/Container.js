@@ -13,7 +13,6 @@ export default class Container extends Component {
         let reviews = this.props.data.reviews
         let reviewsLen =this.props.data.reviews.length
         let reviewsAvg = reviews.reduce((sum,review)=> {return sum + review.rating },0) / reviewsLen
-        // debugger
 
         
     

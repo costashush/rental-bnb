@@ -7,7 +7,6 @@ import './HomesGrid.css';
 export default class HomesGrid extends Component {
 
     render() {   
-        // console.log(this.props.data)    
         let homes = this.props.data.map((data,index)=> <Container key={index} data={data} />)
         return (
             <div className="homesGrid">
