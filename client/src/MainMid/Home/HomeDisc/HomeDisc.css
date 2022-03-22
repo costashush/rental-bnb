@@ -1,28 +1,27 @@
-.homeDisc{
-margin:0 15%; 
-width: 50%;
-/* margin-right: 20%; */
-    }
-.owner{
-    float :right;
-    margin-top: 0;
-    text-align: center;
-    margin-right: 7%;
+.homeDisc {
+  margin: 0 15%;
+  width: 50%;
+  /* margin-right: 20%; */
 }
-.owner h5{
-    margin-top: 0;
-    
+.owner {
+  float: right;
+  margin-top: 0;
+  text-align: center;
+  margin-right: 7%;
 }
-.homeDisc img{
-    height: 60px;
-    width: 60px;
-    border: 1px solid ;
-    border-radius:30px;
+.owner h5 {
+  margin-top: 0;
+}
+.homeDisc img {
+  height: 60px;
+  width: 60px;
+  border: 1px solid;
+  border-radius: 30px;
 }
 @media only screen and (max-width: 900px) {
-    .homeDisc{
-        width: 90%;
-        
-        /* margin-right: 20%; */
-            }
-        }
+  .homeDisc {
+    width: 90%;
+
+    /* margin-right: 20%; */
+  }
+}

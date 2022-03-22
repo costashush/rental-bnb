@@ -1,6 +1,6 @@
 .homesGrid {
-    display: grid;
-    width:100%;
-    grid-template-columns: repeat(4, 1fr);
-    grid-gap: 1rem;
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 1rem;
 }

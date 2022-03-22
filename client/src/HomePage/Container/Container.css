@@ -1,30 +1,26 @@
-.imageContainer{
-    display:flex;
-    flex-direction: column;
-    padding-bottom: 9%;
-    list-style-type:none;
-
+.imageContainer {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 9%;
+  list-style-type: none;
 }
 
-.previewImage{
-    width: 100%;
-    height: 10em;
-    background-repeat: no-repeat;
-    background-size: cover;
-    
+.previewImage {
+  width: 100%;
+  height: 10em;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
-.previewBed{
-    color:rgb(120, 120, 120);
-
+.previewBed {
+  color: rgb(120, 120, 120);
 }
-.previewTitle{
-    color:black;
+.previewTitle {
+  color: black;
 }
-.previewPrice{
-    color:rgb(120, 120, 120);
-    
+.previewPrice {
+  color: rgb(120, 120, 120);
 }
 
-.previewTitle>h3{
-    margin:0.3em 0.3em 0.3em 0;
+.previewTitle > h3 {
+  margin: 0.3em 0.3em 0.3em 0;
 }

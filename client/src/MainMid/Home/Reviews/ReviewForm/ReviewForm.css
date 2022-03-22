@@ -1,8 +1,8 @@
-.reviewForm input{
-width: 100%;
-height: 25px;
+.reviewForm input {
+  width: 100%;
+  height: 25px;
 }
-.reviewForm{
-    margin:0 15%; 
-    width: 50%;
+.reviewForm {
+  margin: 0 15%;
+  width: 50%;
 }
