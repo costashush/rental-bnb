@@ -5,7 +5,7 @@ import AppBar from "material-ui/AppBar";
 import RaisedButton from "material-ui/RaisedButton";
 import TextField from "material-ui/TextField";
 import axios from "axios";
-import styles from "./Login.css";
+// import styles from "./Login.css";
 
 class Login extends Component {
   constructor(props) {
@@ -42,14 +42,14 @@ class Login extends Component {
       .post(apiBaseUrl + "login", payload)
       .then((response) => {
         console.log(response);
-        if (response.status == 200) {
+        if (response.status === 200) {
           localStorage.setItem("token", response.data.token);
           localStorage.setItem("name", response.data.name);
 
           setTimeout(() => {
             this.setState({ redirect: true });
           }, 500);
-        } else if (response.status == 201) {
+        } else if (response.status === 201) {
           alert("username password do not match");
         } else {
           alert("Username does not exist");

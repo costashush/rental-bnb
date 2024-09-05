@@ -32,7 +32,7 @@ export default class ReviewForm extends Component {
         .post(apiBaseUrl, payload, head)
         .then((response) => {
           console.log(response);
-          if (response.status == 200) {
+          if (response.status === 200) {
             this.props.handleOnClick();
             alert("new review added !");
           }

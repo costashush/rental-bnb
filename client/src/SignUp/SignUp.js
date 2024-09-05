@@ -6,8 +6,8 @@ import RaisedButton from "material-ui/RaisedButton";
 import TextField from "material-ui/TextField";
 import axios from "axios";
 
-import styles from "./SignUp.css";
-import Login from "../Login/Login";
+// import styles from "./SignUp.css";
+// import Login from "../Login/Login";
 
 class Signup extends Component {
   constructor(props) {
@@ -41,7 +41,7 @@ class Signup extends Component {
       .post(apiBaseUrl + "/signup", payload)
       .then((response) => {
         console.log(response);
-        if (response.status == 200) {
+        if (response.status === 200) {
           localStorage.setItem("token", response.data.token);
           localStorage.setItem("name", response.data.name);
 

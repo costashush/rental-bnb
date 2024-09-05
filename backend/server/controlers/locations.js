@@ -1,4 +1,6 @@
 const Locations = require('../models/locations');
+const locations_test = require('./homeData.json.js')
+
 /*
 1. getLocations     GET/locations
 2. getLocation      GET/locations/:id
@@ -11,8 +13,9 @@ module.exports = {
     getLocations: async (req, res) => {
       
         try {
-            const locations = await Locations.find({}, '-__v');
-            res.status(200).json(locations);
+            // const locations = await Locations.find({}, '-__v');
+            // res.status(200).json(locations);
+            res.status(200).json(locations_test);
         } catch (error) {
             res.send(error);
 

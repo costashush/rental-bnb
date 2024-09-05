@@ -6,7 +6,7 @@ import Select from "react-select";
 import "react-datepicker/dist/react-datepicker.css";
 import "react-select/dist/react-select.css";
 
-import style from "./DateCheak.css";
+// import style from "./DateCheak.css";
 
 export default class DateCheak extends Component {
   constructor() {

@@ -7,7 +7,7 @@ export default class Review extends Component {
     return (
       <div className="review">
         <div className="user">
-          <img src={this.props.review.userImageUrl} />
+          <img alt='' src={this.props.review.userImageUrl} />
           <h5>{this.props.review.name}</h5>
         </div>
         <h4>{this.props.review.title}</h4>
