@@ -47,7 +47,9 @@ export default class Home extends Component {
             <HomeDisc data={this.state.homeData} />
             <ReviewList reviews={this.state.homeData.reviews} />
             <ReviewForm id={this.state.id} handleOnClick={this.handleOnClick} />
-            <Location data={this.state.homeData.address[0]} />
+            {/* <Location data={this.state.homeData.address[0]} /> */}
+            <Location data={this.state.homeData.address} />
+            \
           </div>
         )}
       </div>

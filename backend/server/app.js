@@ -5,6 +5,7 @@ const cors = require('cors');
 const mongoose = require('mongoose');
 mongoose.connect('mongodb://localhost/airbnb',{useMongoClient:true});
 
+mongoose.Promise = global.Promise;
 
 if (process.env.NODE_ENV === 'test') {
     mongoose.connect('mongodb://localhost/airbnb-test', { useMongoClient: true });

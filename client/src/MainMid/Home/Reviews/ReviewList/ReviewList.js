@@ -4,7 +4,7 @@ import "./ReviewList.css";
 
 export default class ReviewList extends Component {
   render() {
-    let reviews = this.props.reviews.map((review, index) => (
+    let reviews = this.props.reviews && this.props.reviews.map((review, index) => (
       <Review key={index} review={review} />
     ));
     return (
