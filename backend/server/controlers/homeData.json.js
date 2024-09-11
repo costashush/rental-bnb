@@ -1,4 +1,4 @@
-const homeData =
+let homeData =
     [
         {
             "id": 1,
@@ -1268,4 +1268,4 @@ const homeData =
     
     
 
-    export default homeData
+    module.exports = homeData

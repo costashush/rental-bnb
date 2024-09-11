@@ -1,5 +1,5 @@
 const Locations = require('../models/locations');
-const locations_test = require('./homeData.json.js')
+const locations_test = require('./homeData.json.js');
 
 /*
 1. getLocations     GET/locations

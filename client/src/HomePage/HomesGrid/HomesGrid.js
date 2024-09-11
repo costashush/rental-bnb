@@ -7,7 +7,7 @@ export default class HomesGrid extends Component {
   render() {
     let homes;
     console.log('props home grid', this.props.data)
-    if(typeof this.props.data == "Array"){
+    if(this.props.data ){
        homes = this.props.data.map((data, index) => (
         <Container key={index} data={data} />
       ));
