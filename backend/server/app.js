@@ -11,6 +11,9 @@ if (process.env.NODE_ENV === 'test') {
     mongoose.connect('mongodb://localhost/airbnb-test', { useMongoClient: true });
 } else {
     mongoose.connect('mongodb://localhost/airbnb', { useMongoClient: true });
+    //change the name of the DB
+    //mongoose.connect('mongodb://localhost/airbnb', { useMongoClient: true });
+    console.log("productiond db connection")
 }
 //initialize application 
 const app = express();
