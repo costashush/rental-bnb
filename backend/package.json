@@ -21,7 +21,7 @@
     "express-promise-router": "^2.0.0",
     "joi": "^13.0.0",
     "jsonwebtoken": "^8.1.0",
-    "mongodb": "4.2",
+    "mongodb": "4.17",
     "mongoose": "^4.12.1",
     "morgan": "^1.9.0",
     "nodemon": "^1.12.1",
