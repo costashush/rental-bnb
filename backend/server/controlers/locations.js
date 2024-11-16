@@ -1,5 +1,6 @@
 const Locations = require('../models/locations');
 const locations_test = require('./homeData.json.js');
+const mongoose = require('mongoose');
 
 /*
 1. getLocations     GET/locations
@@ -13,8 +14,13 @@ module.exports = {
     getLocations: async (req, res) => {
       
         try {
-            // const locations = await Locations.find({}, '-__v');
+            // Locations.createCollection();
+            const locations = await Locations.find({}, '-__v');
             // res.status(200).json(locations);
+            console.log(`Mongo db: ${locations}`);
+
+            console.log(`Mongo db connected: ${mongoose.connection.readyState}`);
+           
             res.status(200).json(locations_test);
         } catch (error) {
             res.send(error);
@@ -34,8 +40,10 @@ module.exports = {
     getLocation: async (req, res) => {
         try {
             console.log(req.params.locationId)
-            const location = await Locations.findById({ _id: req.params.locationId }, '-__v');
-            await res.status(200).json(location);
+            // const location = await Locations.findById({ _id: req.params.locationId }, '-__v');
+            // await res.status(200).json(location);
+            // console.log(`test`+locations_test)
+            await res.status(200).json(locations_test[req.params.locationId]);
         } catch (error) {
             res.send(error);
         }

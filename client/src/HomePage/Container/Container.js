@@ -12,7 +12,9 @@ export default class Container extends Component {
         return sum + review.rating;
       }, 0) / reviewsLen;
     return (
-      <Link to={"home/" + this.props.data["_id"]}>
+      <Link to={"home/" + this.props.data["id"]}>
+      {/* <Link to={"home/" + this.props.data["_id"]}> */}
+
         <div className="imageContainer">
           <div className="previewImage">
             <img src={this.props.data.imageUrl} />

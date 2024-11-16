@@ -6,7 +6,7 @@ import Select from "react-select";
 import "react-datepicker/dist/react-datepicker.css";
 import "react-select/dist/react-select.css";
 
-// import style from "./DateCheak.css";
+import "./DateCheak.css";
 
 export default class DateCheak extends Component {
   constructor() {
@@ -39,7 +39,7 @@ export default class DateCheak extends Component {
         <div className="price">
           {this.props.data} &#8362;<div className="pernigth">per nigth</div>{" "}
         </div>
-
+      <div className="book">
         <div className="dateInput">
           <DatePicker
             selected={this.state.startDate}
@@ -47,7 +47,7 @@ export default class DateCheak extends Component {
             startDate={this.state.startDate}
             endDate={this.state.endDate}
             onChange={this.handleChangeStart}
-          />
+            />
 
           <DatePicker
             selected={this.state.endDate}
@@ -55,7 +55,7 @@ export default class DateCheak extends Component {
             startDate={this.state.startDate}
             endDate={this.state.endDate}
             onChange={this.handleChangeEnd}
-          />
+            />
         </div>
         <div className="select-input">
           <Select
@@ -63,10 +63,11 @@ export default class DateCheak extends Component {
             value={this.options[0]}
             options={this.options}
             onChange={this.logChange}
-          />
+            />
         </div>
         <button>Request to Book</button>
       </div>
+    </div>
     );
   }
 }
