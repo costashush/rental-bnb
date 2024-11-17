@@ -37,7 +37,7 @@ export default class DateCheak extends Component {
     return (
       <div className="dateCheak">
         <div className="price">
-          {this.props.data} &#8362;<div className="pernigth">per nigth</div>{" "}
+          {this.props.data}<span>&#8362;</span> <div className="pernigth">per nigth</div>{" "}
         </div>
       <div className="book">
         <div className="dateInput">

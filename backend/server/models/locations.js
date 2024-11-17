@@ -5,9 +5,9 @@ const LocationsSchema = new Schema({
     imageUrl: {
         type: String
     },
-    title: String,
-    price: Number,
-    currency: String,
+        title: String,
+        price: Number,
+        currency: String,
     theSpace: {
         beds: Number
     },
