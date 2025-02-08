@@ -14,14 +14,24 @@ module.exports = {
     getLocations: async (req, res) => {
       
         try {
-            // Locations.createCollection();
             const locations = await Locations.find({}, '-__v');
-            // res.status(200).json(locations);
-            console.log(`Mongo db: ${locations}`);
-
-            console.log(`Mongo db connected: ${mongoose.connection.readyState}`);
-           
-            res.status(200).json(locations_test);
+            //set up demo json for testing
+            if(locations.length == 0){
+                
+                try {
+                    locations_test.forEach(element => {
+                        const test_location =  new Locations(element)                   
+                        test_location.save();
+                        
+                    });
+                } catch (error) {
+                    console.log|("DB locations collection start up error" + error);
+                }                      
+                
+            }
+            // console.log(`Mongo db: ${locations}`);         
+            res.status(200).json(locations);
+            // res.status(200).json(locations_test);
         } catch (error) {
             res.send(error);
 
@@ -40,10 +50,10 @@ module.exports = {
     getLocation: async (req, res) => {
         try {
             console.log(req.params.locationId)
-            // const location = await Locations.findById({ _id: req.params.locationId }, '-__v');
-            // await res.status(200).json(location);
+            const location = await Locations.findById({ _id: req.params.locationId }, '-__v');
+            await res.  status(200).json(location);
             // console.log(`test`+locations_test)
-            await res.status(200).json(locations_test[req.params.locationId]);
+            // await res.status(200).json(locations_test[req.params.locationId]);
         } catch (error) {
             res.send(error);
         }

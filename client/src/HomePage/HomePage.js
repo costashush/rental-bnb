@@ -20,8 +20,10 @@ class HomePage extends Component {
     .then((response) => response.json())
     .then((json) => {
         return json;
-      });
-      console.log("locations data  =============>",data)
+      }).catch(error => {
+        console.log("failed to fetch data");
+    });;
+      // console.log("locations data  =============>",data)
     return data;
   }
   render() {

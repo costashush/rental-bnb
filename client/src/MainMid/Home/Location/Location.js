@@ -9,19 +9,19 @@ export default class Location extends Component {
   }
 
   componentDidMount() {
-    // console.log('test 34' , this.props.data);
-    // this.map = new google.maps.Map(this.$map, {
-    //   center: {
-    //     lat: parseInt(this.props.data.lat),
-    //     lng: parseInt(this.props.data.lng),
-    //   },
-    //   zoom: 7,
-    // });
-    // this.map.addListener("click", (event) => {});
-    // this.addMarkerToMap({
-    //   lat: parseInt(this.props.data.lat),
-    //   lng: parseInt(this.props.data.lng),
-    // });
+    // console.log('test props' , this.props.data);
+    this.map = new google.maps.Map(this.$map, {
+      center: {
+        lat: parseInt(this.props.data.lat),
+        lng: parseInt(this.props.data.lng),
+      },
+      zoom: 7,
+    });
+    this.map.addListener("click", (event) => {});
+    this.addMarkerToMap({
+      lat: parseInt(this.props.data.lat),
+      lng: parseInt(this.props.data.lng),
+    });
   }
 
   addMarkerToMap(myLatlng) {

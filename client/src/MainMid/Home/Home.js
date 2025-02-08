@@ -28,7 +28,9 @@ export default class Home extends Component {
       .then((response) => response.json())
       .then((json) => {
         return json;
-      });
+      }).catch(error => {
+        console.log("failed to fetch home data" + this.state.id);
+    });;
     return data;
   }
 
